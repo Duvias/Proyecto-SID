@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7294960-B0C2-9CB9-83D1-01F726A2CC0E" name="AJUSTE_INVENTARIO">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:19:24 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="71A63214-9BB0-5B2B-607F-30C77EFBDA18">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:40:26 UTC</createdTime>
+<generatorID>0BECB9EC-EB3D-F6DF-A828-87B4C7F34E55</generatorID>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>2D38E710-1269-6057-C5DC-323AF6592240</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ajuste" id="790D9022-903F-304D-2F8E-2BAF0B3DB9AA">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:02:05 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_ajuste" id="709621EB-FE8B-0D41-6E11-B2EFB3BBD085">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:02:15 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad" id="E5EAB104-7E2B-040A-9A25-814FCC92A5BD">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:05:03 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock_anterior" id="AAE0A1CF-AB64-F4A7-A44F-4828079EA844">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:05:20 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock_nuevo" id="B5044E9B-3BCC-5145-5A7F-CD84C526C3A4">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:05:56 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="motivo" id="0DA5A3A8-0D3D-0E9C-442D-4A4B47DA3A1C">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:06:14 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="418A2BBA-7B90-1D7A-6657-7B5907A7CDF1">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:06:34 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9AB8997-2364-E4B5-9366-5EFD80DC7037" name="AJUSTE_INVENTARIO PK">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:05:16 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>790D9022-903F-304D-2F8E-2BAF0B3DB9AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

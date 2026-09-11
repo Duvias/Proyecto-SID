@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84834AA6-7627-B68F-2A7E-C3351967065B" name="PRODUCTO">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:20:47 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="E0340D9E-2305-0D92-383A-5401618AC3AE">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:43:51 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo_barras" id="2ACB7AC2-3F3D-9F3D-7C81-5B0772B64A9B">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:44:04 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="FD31CA85-1FA0-A497-431C-79ADBFB75238">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:44:24 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="9CF5C987-FEEE-E713-20AD-3446FF150B59">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:44:39 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo" id="9A8B5F48-F27C-A91A-7C62-4826FD25362C">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:45:02 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="4EC5E572-A52B-B486-2732-CBF55DF9E18E">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:45:26 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="DEF1D3A2-F8A6-8C23-C2A9-A84716BD08CE">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:45:42 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_detalle_venta" id="8596AE5B-703E-8A21-58AC-40032502D3CC">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:09:05 UTC</createdTime>
+<generatorID>B4FD08F1-1E9C-C5B6-DF99-8F6477EF1F10</generatorID>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>C314A2A2-F367-0BC7-4672-B9B6B7731138</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_inventario" id="EF6AE14A-6A2B-4DA4-101E-DECD7F667FC7">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:19:49 UTC</createdTime>
+<generatorID>F446E22A-3E98-628E-07FD-EE934CECC483</generatorID>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>83480445-27A6-15FC-3C24-10373D525296</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categoria" id="C8543883-54BF-1E41-98EF-1C99FCED0DAF">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 04:20:25 UTC</createdTime>
+<generatorID>03F189E3-819C-A54D-9F69-ABE63B0E233C</generatorID>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>31FC1F10-8771-40EF-4E9D-BE312F52FAD5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F16C47A1-EFC1-58C8-0D20-1A40978445D4" name="PRODUCTO PK">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:44:03 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0340D9E-2305-0D92-383A-5401618AC3AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

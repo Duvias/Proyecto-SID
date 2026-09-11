@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3BFD0364-3C26-F9CD-193B-E421CF8F8C9E" name="USUARIO">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:19:29 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="F0AE9CE2-D84D-6432-5B42-53D04703DFE9">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:19:39 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="AED19569-EF8B-A54F-7E2F-FF59CC9C5BB5">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:21:31 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="00ACAAFD-830B-C54B-46F4-A9944EB5D9A1">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:21:52 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contraseña" id="31DF957B-6D9B-29C1-366B-9D7A1AF2C955">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:22:10 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="B44D9E3F-D733-66A3-2673-24BC09D91EA6">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:22:29 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rol_id" id="DF77A3FE-CF2C-1028-1FD2-3E274AF37E99">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:22:59 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="activo" id="AD1F0742-643B-676F-BE8D-33170AC421A1">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:23:24 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo_verificado" id="00C05D27-9A8F-9EC2-ACE8-6D33FC846ACB">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:25:29 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="caducacion_tóken_verificación_email" id="62C50240-2436-9213-1C2F-1D4A5E17BF73">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:30:16 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vencimiento_token_restablecer_contraseña" id="731EE217-B2E8-368D-2C7D-B3123270CC6F">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:31:54 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_creacion" id="B3B1A156-1242-316D-E5B0-4286A5795D21">
+<createdBy>Isabella</createdBy>
+<createdTime>2026-08-31 23:32:43 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_actualizacion" id="D417EDBD-010A-244B-BD4C-E857696B917A">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:28:18 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="75852FE0-84B8-5BCE-05BE-F3B90F6545C8">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:29:03 UTC</createdTime>
+<generatorID>D4376C0B-A93E-B889-448C-0E3B2E5358F6</generatorID>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>B51435D8-FF0D-8B32-5CA2-30E4C57FB75E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE6DBEE7-355B-A4A0-AB69-AE3F20F89538" name="USUARIOS PK">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 02:54:34 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0AE9CE2-D84D-6432-5B42-53D04703DFE9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

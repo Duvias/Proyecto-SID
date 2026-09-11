@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_15" directorySegmentName="seg_0" id="03F189E3-819C-A54D-9F69-ABE63B0E233C">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:21:30 UTC</createdTime>
+<ownerDesignName>stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<sourcePk>F16C47A1-EFC1-58C8-0D20-1A40978445D4</sourcePk>
+<targetPk>DBF9EDE1-BB6A-68FA-C09B-92B548A6A2BF</targetPk>
+<identifying>false</identifying>
+<nameOnSource>pertenece</nameOnSource>
+<nameOnTarget>tiene</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>84834AA6-7627-B68F-2A7E-C3351967065B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>278DFE5C-0AE5-7DB7-C76C-9A38B4317D89</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
