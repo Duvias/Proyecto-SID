@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D6C973B3-9051-345B-CB3F-B6B4DF7C471D" name="INVENTARIO">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:20:57 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id inventario" id="83480445-27A6-15FC-3C24-10373D525296">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:48:23 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad disponible" id="47894B66-5E91-D216-E925-B6E3E633213C">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:48:32 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock minimo" id="E2B8E790-91B9-33C9-E2F7-98EB9E460171">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:49:07 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha creacion" id="AF086AED-3F43-1FE2-184A-4C7B6D8878AC">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:49:19 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha actualizacion" id="556B5072-7664-2C1B-272D-B6D6497548DC">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:49:37 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTABLECIMIENTO id establecimiento" id="008A372A-09E9-031D-23E8-A3994E3BEA6C">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 00:23:37 UTC</createdTime>
+<generatorID>3A919FC0-594E-9A67-5E58-C516E22CC667</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>3C7AF97E-FC0F-1FC9-2659-2A8F0FEBBD73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCTO id" id="8E75A523-14C1-E530-A9C5-49613BE8303D">
+<createdBy>Windows</createdBy>
+<createdTime>2026-10-12 00:40:38 UTC</createdTime>
+<generatorID>9E5029EB-FBBC-0446-156A-9B21C6B565A5</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<referedAttribute>E0340D9E-2305-0D92-383A-5401618AC3AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7187C511-D3D5-580C-457D-CA7ADAC0E566" name="INVENTARIO PK">
+<createdBy>Windows</createdBy>
+<createdTime>2026-09-06 03:48:39 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83480445-27A6-15FC-3C24-10373D525296</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

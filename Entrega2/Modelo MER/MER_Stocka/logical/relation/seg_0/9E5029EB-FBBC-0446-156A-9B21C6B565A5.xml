@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INVENTARIO_PRODUCTO_FK" directorySegmentName="seg_0" id="9E5029EB-FBBC-0446-156A-9B21C6B565A5">
+<createdBy>Windows</createdBy>
+<createdTime>2026-10-12 00:40:38 UTC</createdTime>
+<generatorID>B7467993-7101-7728-11D9-1048C4F099C4</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<sourcePk>F16C47A1-EFC1-58C8-0D20-1A40978445D4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>84834AA6-7627-B68F-2A7E-C3351967065B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6C973B3-9051-345B-CB3F-B6B4DF7C471D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8842575-8FD9-C0CB-71AB-E0E1D7CA0AAB" name="DETALLE_VENTA">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>CAE3EABE-2290-86D7-4778-D10B2953A0DB</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VENTA_id_venta" id="BB6CCE5D-AC60-3367-7EBD-74B6C943BEF9">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>0D640EF3-A9D9-1F1A-977A-3BB4DEA36E9D</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8BF673A-79FF-4A02-26E0-6F78DEA0DE8B" referredColumn="17F9396B-7BE5-2015-87C5-F38BD223A3C0"/>
+</associations>
+</Column>
+<Column name="id_detalle_venta" id="002F5E56-2A1A-67E2-6508-F94388ADC5D1">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>C314A2A2-F367-0BC7-4672-B9B6B7731138</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_unitario" id="4745CA3B-A84E-03C7-4EE1-00067D6A1753">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>92579CAB-561F-6F2C-59D9-CAC48411EB1B</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="8F67E0FA-19BA-6E87-D163-67402093BBBC">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>4F3EFCEA-7076-9F28-0A1A-474123AEC187</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descuento" id="4DD53DC7-3B4D-D56B-2BC7-8013B40CFA19">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>C6CAC833-4229-35DE-F74D-EEB8ABEBA500</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtotal" id="29F6A889-2501-66D7-FB8F-801860699F02">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>108E3921-616D-B700-96BB-2DE724210255</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_detalle_venta1" id="219CAE78-EE7E-5A66-EA38-34A124188C21">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>6B70212D-64C7-2BF7-83BE-1CF5F559CFE5</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_id" id="83206F32-6C39-5AD2-253D-D603EB731681">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 13:24:05 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AEE81B2-D6EC-424A-AC29-8AA97461619E" referredColumn="3AA27BDB-300D-8077-F49C-3A37BD4DB50F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4143F80-6812-9619-D637-B661816B4A03" name="DETALLE_VENTA_PK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>97AAC503-6537-8DC0-E695-7C9F0A9B522B</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="002F5E56-2A1A-67E2-6508-F94388ADC5D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="604EFB27-A999-7D86-7F8B-6CEA93A5DD9A" name="DETALLE_VENTA_VENTA_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>E410523A-5F33-5E5D-F0E9-4B173079BF52</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB6CCE5D-AC60-3367-7EBD-74B6C943BEF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C45FEE63-54BC-56B9-6859-234C71BE982A" name="DETALLE_VENTA_PRODUCTO_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>B4FD08F1-1E9C-C5B6-DF99-8F6477EF1F10</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83206F32-6C39-5AD2-253D-D603EB731681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

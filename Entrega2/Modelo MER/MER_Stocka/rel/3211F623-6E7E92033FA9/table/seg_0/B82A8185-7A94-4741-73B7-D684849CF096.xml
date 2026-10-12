@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B82A8185-7A94-4741-73B7-D684849CF096" name="NEGOCIO">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>92A2A9AE-9606-6B29-18B4-9C7213EF5967</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_negocio" id="9E2D438F-5735-3F9D-09B1-A245C552692C">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>B5A7A492-D83F-B188-0331-96B801E7A05C</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="148CB3D9-5CCB-A821-D301-F0FBDDCEE3A0">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>8A1F3C98-0373-5C11-06BD-5476F1B4CFBE</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="479FDBF2-FF3F-711E-D4F7-7041CC292071">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>2F226653-A7F5-C6E5-1F85-0FC52D74DB16</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="5F0CB9AC-9B31-C21C-EE8A-630D0FE41257">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>F4D840D2-CF1E-48A8-120A-EC3DFB07A65E</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="DCF4CBC2-2C99-D6A8-2343-C0056010C3A1">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>30631ACF-97A8-A069-C444-D027F569EE76</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="F84AA2CA-F157-F07F-F68F-CE511E376BCA">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>9E9DC38D-99D5-5561-0A88-2A5B7D1E30CF</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_actualizacion" id="DCAB676D-C093-DB6A-B8DD-5C05883E41A6">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>0A4BD20B-67EC-16DC-5462-43D9396DC81C</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="664420D7-D778-B8FD-6447-71937D99A5A8" name="NEGOCIO_PK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>BD33899D-71D0-6BE2-6754-E5B5CA979573</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E2D438F-5735-3F9D-09B1-A245C552692C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

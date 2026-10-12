@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VENTA SESION CAJA FK" directorySegmentName="seg_0" id="B4675B65-7D21-CB63-CCBC-17DD94A0B6BC">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 00:16:34 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<sourcePk>63A7A92F-CAEB-E65C-425E-311C2C5479DD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>tiene</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4C25D87A-E570-20A3-F5AB-558ECF8FAE70</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>58D1BB67-29EF-F1A5-ABAF-5DAC55989718</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

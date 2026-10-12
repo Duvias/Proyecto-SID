@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="USUARIO NEGOCIO FK" directorySegmentName="seg_0" id="679CD4CA-E202-BAD1-9653-38733A7059CD">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 00:08:10 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<sourcePk>BD33899D-71D0-6BE2-6754-E5B5CA979573</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>administra</nameOnSource>
+<nameOnTarget>administrado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92A2A9AE-9606-6B29-18B4-9C7213EF5967</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BFD0364-3C26-F9CD-193B-E421CF8F8C9E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="395CE0BB-65EC-1A25-8425-76EBD321C28E" name="EMPLEADO">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>3E462A62-F163-4C90-E17C-25F60EA54401</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USUARIO_id_usuario" id="04DABBD4-D364-1617-42CC-3E0F14680BC0">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>AD3BFF3D-16F6-FFAC-E0BD-477377207E95</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="845C6E19-89AD-70DB-2495-787FEF2A3760" referredColumn="370D7AB1-12A9-CA5C-0463-D28E7B20498B"/>
+</associations>
+</Column>
+<Column name="id" id="8A710739-73A3-7DA9-BF0F-F2673881EB2E">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>2D38E710-1269-6057-C5DC-323AF6592240</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="EAF1518F-5597-44F2-1224-0BF325E446C1">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>03AA95E5-36CE-AFA3-02A8-4934717811B4</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="E76D652F-05FF-B2FD-5BC6-551BD915435F">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>99E0B87D-AE99-924D-56BC-9142E67F56AB</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_actualizacion" id="C374ACE9-90FE-995F-386A-3BA5F87E0FF9">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>35485CED-A905-9E73-CFB0-BBE0882C569E</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTABLECIMIENTO_id_establecimiento" id="1D3D594D-EE15-2D7F-A41F-F10344420A05">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>7A30E74F-B02C-CC6C-DE6A-DE5B089794E1</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64E8909E-C959-D994-7A30-0E66893F1703" referredColumn="281B8680-8E47-4F69-2E52-DBC3EC81C659"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABF6B56B-0E87-F8C3-07AF-D9D621B69297" name="EMPLEADO_PK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>74457737-5662-4DEA-E3B0-A0E236EF7FDB</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A710739-73A3-7DA9-BF0F-F2673881EB2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33A2DBD7-95B3-82F2-B9EE-3F9B59A7B565" name="EMPLEADO__IDX">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>84EE3B57-A8F5-A6E2-7AB4-51AE55633C40</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="04DABBD4-D364-1617-42CC-3E0F14680BC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F482C28E-37B0-8C40-F626-5A21E30C4BDC" name="EMPLEADO_ESTABLECIMIENTO_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>9AD268B6-0A8F-A144-7D32-176126D68279</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D3D594D-EE15-2D7F-A41F-F10344420A05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D432C602-2A48-48F7-14CE-E3CF30AABE78" name="EMPLEADO_USUARIO_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>84EE3B57-A8F5-A6E2-7AB4-51AE55633C40</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04DABBD4-D364-1617-42CC-3E0F14680BC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

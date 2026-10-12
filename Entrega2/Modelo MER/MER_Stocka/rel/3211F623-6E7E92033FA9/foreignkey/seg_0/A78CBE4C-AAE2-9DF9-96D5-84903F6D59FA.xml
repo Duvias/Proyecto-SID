@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A78CBE4C-AAE2-9DF9-96D5-84903F6D59FA" containerWithKeyObject="DC311961-D2AF-99EA-F940-D86D908B5203" localFKIndex="86DFDFFA-6E42-2CC1-9D71-0EEE992D20BD" name="AJUSTE_INVENTARIO_INVENTARIO_FK">
+<createdBy>Windows</createdBy>
+<createdTime>2026-10-11 23:37:41 UTC</createdTime>
+<generatorID>7187C511-D3D5-580C-457D-CA7ADAC0E566</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<referredTableLongName>INVENTARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FC40CC56-654D-550F-7502-E018218C0B1F</referredTableID>
+<keyObject>54512123-600B-D9F1-DBB0-3E2338323315</keyObject>
+<referredKeyID>54512123-600B-D9F1-DBB0-3E2338323315</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_inventario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

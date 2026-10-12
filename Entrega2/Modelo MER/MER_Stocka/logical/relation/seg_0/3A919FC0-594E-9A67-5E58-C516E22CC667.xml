@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INVENTARIO ESTABLECIMIENTO FK" directorySegmentName="seg_0" id="3A919FC0-594E-9A67-5E58-C516E22CC667">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 00:23:37 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<engineerTo>
+<item key="3211F623-9C42-BEBD-403D-6E7E92033FA9" value="true"/>
+</engineerTo>
+<sourcePk>ED638F1B-9B2C-AF51-9F1C-D00EB5B786E6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>tiene</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3A45D8D8-F61F-F896-80DB-FE05402635C1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D6C973B3-9051-345B-CB3F-B6B4DF7C471D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="875F520F-0912-0A2C-22F8-FBDA8AF158AC" containerWithKeyObject="A496EDA5-A2D0-3929-A655-0BFCFEEC76B8" localFKIndex="B91963F4-B9EF-5B3E-A5A5-321C771D22A2" name="VENTA_SESION_CAJA_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>B4675B65-7D21-CB63-CCBC-17DD94A0B6BC</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<referredTableLongName>SESION_CAJA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E031F4B3-3A6A-9C59-B223-753F1A80E47A</referredTableID>
+<keyObject>E752C0D2-8594-BA2D-6AFC-55FC1122103B</keyObject>
+<referredKeyID>E752C0D2-8594-BA2D-6AFC-55FC1122103B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

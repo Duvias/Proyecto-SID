@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F627705-B1CC-9F6B-44F2-A011A7E65083" containerWithKeyObject="BA2B5AC4-A30A-2227-6E69-C847CB383217" localFKIndex="6FCB9393-B639-769E-E240-226D7E15D6B4" name="CAJA_ESTABLECIMIENTO_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-10-02 12:40:21 UTC</createdTime>
+<generatorID>78569E40-23D2-BD0A-2709-29CC9F1DADA7</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<referredTableLongName>ESTABLECIMIENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>66FDBEC8-B608-DAD1-0A98-7249AD5E4E71</referredTableID>
+<keyObject>566F82C4-FEEF-1AB2-B831-E82C3E5E9826</keyObject>
+<referredKeyID>566F82C4-FEEF-1AB2-B831-E82C3E5E9826</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_establecimiento</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
