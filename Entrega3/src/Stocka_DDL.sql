@@ -140,9 +140,19 @@ CREATE TABLE PRODUCTOS (
     precio        NUMBER(12,2),
     estado        CHAR(1),
     CONSTRAINT PRODUCTOS_PK PRIMARY KEY (id),
-    CONSTRAINT PRODUCTOS_CODIGO_BARRAS_UK UNIQUE (negocio_id, codigo_barras),
     CONSTRAINT PRODUCTOS_ESTADO_CK CHECK (estado IN ('A','I'))
 );
+
+-- Codigo de barras unico por negocio.
+-- No se puede usar una restriccion UNIQUE (negocio_id, codigo_barras) normal:
+-- en Oracle, cuando una clave unica compuesta queda parcialmente nula, se
+-- comparan solo las columnas con valor, de modo que esa restriccion permitiria
+-- un unico producto sin codigo de barras en todo el sistema. El indice
+-- funcional deja la clave completamente nula en esos casos, y Oracle no indexa
+-- las filas cuya clave es nula por completo.
+CREATE UNIQUE INDEX PRODUCTOS_CODIGO_BARRAS_UK ON PRODUCTOS
+    (CASE WHEN codigo_barras IS NOT NULL THEN negocio_id    END,
+     CASE WHEN codigo_barras IS NOT NULL THEN codigo_barras END);
 
 -- INVENTARIOS: existencias de un producto en una sede. La clave unica sobre
 -- (establecimiento, producto) es la clave alterna de la tabla: impide registrar
@@ -227,10 +237,20 @@ CREATE TABLE AJUSTES_INVENTARIO (
     motivo           VARCHAR2(200)  NOT NULL,
     fecha_ajuste     DATE           NOT NULL,
     CONSTRAINT AJUSTES_INVENTARIO_PK PRIMARY KEY (id),
-    CONSTRAINT AJUSTES_TRANSFER_TIPO_UK UNIQUE (transferencia_id, tipo_ajuste),
     CONSTRAINT AJUSTES_INVENTARIO_TIPO_CK
         CHECK (tipo_ajuste IN ('ENTRADA','SALIDA','MERMA','CONTEO_FISICO'))
 );
+
+-- Una transferencia no puede registrar dos salidas ni dos entradas.
+-- Igual que en PRODUCTOS, no sirve una restriccion UNIQUE normal sobre
+-- (transferencia_id, tipo_ajuste): la mayoria de los ajustes no pertenecen a
+-- ninguna transferencia y dejan esa columna nula, y Oracle compararia entonces
+-- solo el tipo, permitiendo un unico ajuste de cada tipo en toda la tabla.
+-- Con el indice funcional, los ajustes sueltos producen una clave totalmente
+-- nula que Oracle no indexa, y la restriccion aplica solo a los de traslado.
+CREATE UNIQUE INDEX AJUSTES_TRANSFER_TIPO_UK ON AJUSTES_INVENTARIO
+    (CASE WHEN transferencia_id IS NOT NULL THEN transferencia_id END,
+     CASE WHEN transferencia_id IS NOT NULL THEN tipo_ajuste      END);
 
 -- VENTAS: encabezado de la factura. El cliente es opcional porque se admite la
 -- venta a consumidor final sin registrar sus datos. La clave unica garantiza
@@ -252,7 +272,7 @@ CREATE TABLE VENTAS (
     CONSTRAINT VENTAS_PK PRIMARY KEY (id),
     CONSTRAINT VENTAS_NUMERO_TICKET_UK UNIQUE (sesion_caja_id, numero_ticket),
     CONSTRAINT VENTAS_METODO_PAGO_CK
-        CHECK (metodo_pago IN ('EFECTIVO','TARJETA_DEBITO','TARJETA_CREDITO','TRANSFERENCIA')),
+        CHECK (metodo_pago IN ('EFECTIVO','TRANSFERENCIA','TARJETA')),
     CONSTRAINT VENTAS_ESTADO_CK
         CHECK (estado IN ('COMPLETADA','ANULADA','PENDIENTE'))
 );
