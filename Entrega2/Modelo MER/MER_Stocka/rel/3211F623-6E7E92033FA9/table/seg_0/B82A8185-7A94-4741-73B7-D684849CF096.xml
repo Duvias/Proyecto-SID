@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B82A8185-7A94-4741-73B7-D684849CF096" name="NEGOCIO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B82A8185-7A94-4741-73B7-D684849CF096" name="NEGOCIOS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>92A2A9AE-9606-6B29-18B4-9C7213EF5967</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>negocio</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -87,7 +88,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="664420D7-D778-B8FD-6447-71937D99A5A8" name="NEGOCIO_PK">
+<ind_PK_UK id="664420D7-D778-B8FD-6447-71937D99A5A8" name="NEGOCIOS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>BD33899D-71D0-6BE2-6754-E5B5CA979573</generatorID>

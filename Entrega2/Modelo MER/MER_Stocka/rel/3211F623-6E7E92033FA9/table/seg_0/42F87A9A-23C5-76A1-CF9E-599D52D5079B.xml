@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42F87A9A-23C5-76A1-CF9E-599D52D5079B" name="ROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42F87A9A-23C5-76A1-CF9E-599D52D5079B" name="ROLES">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>AD66F67C-27B9-D8EB-8B0F-E6BDF2E1E697</generatorID>
@@ -31,7 +31,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="descipcion" id="3774F288-E467-50B9-3DAF-95268F1F0C67">
+<Column name="descripcion" id="3774F288-E467-50B9-3DAF-95268F1F0C67">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>9A8ED307-880E-5E63-CE5E-6D46F92E2EB7</generatorID>

@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC40CC56-654D-550F-7502-E018218C0B1F" name="INVENTARIO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC40CC56-654D-550F-7502-E018218C0B1F" name="INVENTARIOS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>D6C973B3-9051-345B-CB3F-B6B4DF7C471D</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>inventario</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -63,7 +64,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ESTABLECIMIENTO_id_establecimiento" id="121FE683-6C31-C388-9F97-605743337B6F">
+<Column name="ESTABLECIMIENTOS_id_establecimiento" id="121FE683-6C31-C388-9F97-605743337B6F">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>008A372A-09E9-031D-23E8-A3994E3BEA6C</generatorID>
@@ -78,7 +79,7 @@
 <colAssociation fkAssociation="C1F0CAF7-1DCD-65BA-22B9-D9129160D29D" referredColumn="281B8680-8E47-4F69-2E52-DBC3EC81C659"/>
 </associations>
 </Column>
-<Column name="PRODUCTO_id" id="5ACAB827-4A48-A4BC-EE8D-654B0183D138">
+<Column name="PRODUCTOS_id" id="5ACAB827-4A48-A4BC-EE8D-654B0183D138">
 <createdBy>Windows</createdBy>
 <createdTime>2026-10-11 23:27:23 UTC</createdTime>
 <ownerDesignName>MER_Stocka</ownerDesignName>
@@ -94,7 +95,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="54512123-600B-D9F1-DBB0-3E2338323315" name="INVENTARIO_PK">
+<ind_PK_UK id="54512123-600B-D9F1-DBB0-3E2338323315" name="INVENTARIOS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>7187C511-D3D5-580C-457D-CA7ADAC0E566</generatorID>
@@ -106,7 +107,18 @@
 <colUsage columnID="C8D23991-94CB-EC2C-30DE-CAB36735165D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1C8C6F19-9DA2-EF3E-DD14-252E89DCEC4F" name="INVENTARIO_ESTABLECIMIENTO_FK">
+<ind_PK_UK id="7D9CF8B5-10CF-EED5-B7DA-CC116FE5F617" name="INVENTARIOS_PRODUCTO_ESTAB_UK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:10:13 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="121FE683-6C31-C388-9F97-605743337B6F"/>
+<colUsage columnID="5ACAB827-4A48-A4BC-EE8D-654B0183D138"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C8C6F19-9DA2-EF3E-DD14-252E89DCEC4F" name="INVENTARIOS_ESTABLECIMIENTO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>3A919FC0-594E-9A67-5E58-C516E22CC667</generatorID>
@@ -117,7 +129,7 @@
 <colUsage columnID="121FE683-6C31-C388-9F97-605743337B6F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F52E2E83-8D30-BDCC-0CB9-BD0E3FF19A42" name="INVENTARIO_PRODUCTO_FK">
+<ind_PK_UK id="F52E2E83-8D30-BDCC-0CB9-BD0E3FF19A42" name="INVENTARIOS_PRODUCTO_FK">
 <createdBy>Windows</createdBy>
 <createdTime>2026-10-11 23:27:23 UTC</createdTime>
 <generatorID>F16C47A1-EFC1-58C8-0D20-1A40978445D4</generatorID>

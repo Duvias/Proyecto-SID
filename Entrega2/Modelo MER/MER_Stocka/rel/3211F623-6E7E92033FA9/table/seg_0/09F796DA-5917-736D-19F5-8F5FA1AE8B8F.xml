@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09F796DA-5917-736D-19F5-8F5FA1AE8B8F" name="USUARIO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09F796DA-5917-736D-19F5-8F5FA1AE8B8F" name="USUARIOS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>3BFD0364-3C26-F9CD-193B-E421CF8F8C9E</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>usuario</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -43,7 +44,7 @@
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="contraseña" id="9DFEC8D4-FAFC-4BEA-6AC3-3F0BAADD56B3">
+<Column name="clave_hash" id="9DFEC8D4-FAFC-4BEA-6AC3-3F0BAADD56B3">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>31DF957B-6D9B-29C1-366B-9D7A1AF2C955</generatorID>
@@ -91,25 +92,25 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="caducacion_tóken_verificación_email" id="8CD7C142-C1FA-F4F4-F054-1C4AF9A4424B">
+<Column name="fecha_vencimiento_token_email" id="8CD7C142-C1FA-F4F4-F054-1C4AF9A4424B">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>62C50240-2436-9213-1C2F-1D4A5E17BF73</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="vencimiento_token_restablecer_contraseña" id="7B005427-E283-FBC5-5C72-B735B9162F60">
+<Column name="fecha_vencimiento_token_clave" id="7B005427-E283-FBC5-5C72-B735B9162F60">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>731EE217-B2E8-368D-2C7D-B3123270CC6F</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -135,7 +136,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ROL_id" id="18A31AD7-6827-8C1A-6D8D-B288967217E4">
+<Column name="ROLES_id" id="18A31AD7-6827-8C1A-6D8D-B288967217E4">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>75852FE0-84B8-5BCE-05BE-F3B90F6545C8</generatorID>
@@ -150,7 +151,7 @@
 <colAssociation fkAssociation="52CBB342-7BA1-B0CD-3069-92661E3CE65E" referredColumn="0C8175A0-3326-A808-F8CD-F89ACE03BA85"/>
 </associations>
 </Column>
-<Column name="NEGOCIO_id_negocio" id="2FAB7C3A-9955-59C9-1EE4-446B2306636D">
+<Column name="NEGOCIOS_id_negocio" id="2FAB7C3A-9955-59C9-1EE4-446B2306636D">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>BF33266F-64B6-1ACF-8A97-FBED62EDC722</generatorID>
@@ -167,7 +168,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="65A7662A-009F-AAC1-979A-A75FBBEEBD4A" name="USUARIO_PK">
+<ind_PK_UK id="65A7662A-009F-AAC1-979A-A75FBBEEBD4A" name="USUARIOS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>FE6DBEE7-355B-A4A0-AB69-AE3F20F89538</generatorID>
@@ -179,7 +180,7 @@
 <colUsage columnID="370D7AB1-12A9-CA5C-0463-D28E7B20498B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="266ED01E-AD86-2561-BA6E-C3360ED48AB9" name="USUARIO_ROL_FK">
+<ind_PK_UK id="266ED01E-AD86-2561-BA6E-C3360ED48AB9" name="USUARIOS_ROL_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>D4376C0B-A93E-B889-448C-0E3B2E5358F6</generatorID>
@@ -190,7 +191,7 @@
 <colUsage columnID="18A31AD7-6827-8C1A-6D8D-B288967217E4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D6C981DB-1CB7-3543-3D65-88BACEEC284D" name="USUARIO_NEGOCIO_FK">
+<ind_PK_UK id="D6C981DB-1CB7-3543-3D65-88BACEEC284D" name="USUARIOS_NEGOCIO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>679CD4CA-E202-BAD1-9653-38733A7059CD</generatorID>

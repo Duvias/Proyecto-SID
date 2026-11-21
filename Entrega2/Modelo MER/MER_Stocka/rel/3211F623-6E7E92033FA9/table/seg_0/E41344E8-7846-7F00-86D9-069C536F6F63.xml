@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E41344E8-7846-7F00-86D9-069C536F6F63" name="TRANSFERENCIAS">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:39:57 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_transferencia" id="8403F147-8CC5-B8F2-AFF8-7A696019C648">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:41:15 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_solicitud" id="A165453A-6E95-6447-9AB2-68FAD9BE8926">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:41:15 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="F4D46A5B-58E3-6A55-2A34-678923CD5B79">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:41:15 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motivo" id="519D2187-8046-0DCF-2405-1558DF1ABAEC">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:41:15 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADOS_id" id="4D84D842-76F6-0DDF-2612-60EC717686D7">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:42:35 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B1E8935-BA0A-3D24-E7B2-D34C734657FC" referredColumn="8A710739-73A3-7DA9-BF0F-F2673881EB2E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2056E752-60AC-6BE6-684E-CF3E1682A047" name="TRANSFERENCIAS_PK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:41:15 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8403F147-8CC5-B8F2-AFF8-7A696019C648"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F062AAC-B199-2275-8866-B2E02231D3AE" name="TRANSFERENCIAS_EMPLEADOS_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:42:35 UTC</createdTime>
+<generatorID>74457737-5662-4DEA-E3B0-A0E236EF7FDB</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D84D842-76F6-0DDF-2612-60EC717686D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="TRANSFERENCIAS_CK_1" directorySegmentName="seg_0" id="86659CAA-6F54-4838-E606-1FC4223860A1">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:42:07 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<rule><![CDATA[estado IN ('PENDIENTE','EN_TRANSITO','RECIBIDA','ANULADA')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

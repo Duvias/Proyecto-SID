@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EBDDB8A1-4512-00C1-9EE4-B231FE09B4E4" containerWithKeyObject="DC311961-D2AF-99EA-F940-D86D908B5203" localFKIndex="DCFC05CE-CE00-2DC9-6078-0A54D33BF6AF" name="AJUSTES_INVENTARIO_TRANSFERENCIAS_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:43:21 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<referredTableLongName>TRANSFERENCIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E41344E8-7846-7F00-86D9-069C536F6F63</referredTableID>
+<keyObject>2056E752-60AC-6BE6-684E-CF3E1682A047</keyObject>
+<referredKeyID>2056E752-60AC-6BE6-684E-CF3E1682A047</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_transferencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
