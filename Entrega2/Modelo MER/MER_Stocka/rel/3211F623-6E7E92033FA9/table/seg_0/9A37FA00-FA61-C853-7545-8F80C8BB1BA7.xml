@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A37FA00-FA61-C853-7545-8F80C8BB1BA7" name="CLIENTE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A37FA00-FA61-C853-7545-8F80C8BB1BA7" name="CLIENTES">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>F687452A-1545-7170-7ACA-8ED01CB9C855</generatorID>
@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="NEGOCIO_id_negocio" id="0E0CBB06-58C2-5031-5184-3ADE0D75E090">
+<Column name="NEGOCIOS_id_negocio" id="0E0CBB06-58C2-5031-5184-3ADE0D75E090">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>8545F496-F01A-2E08-ED23-A8A452FC375A</generatorID>
@@ -105,7 +105,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="71B82942-1BB6-0489-5EF6-1FC8E821330A" name="CLIENTE_PK">
+<ind_PK_UK id="71B82942-1BB6-0489-5EF6-1FC8E821330A" name="CLIENTES_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>F2176119-0496-72BC-0561-88A93574E0FA</generatorID>
@@ -117,7 +117,7 @@
 <colUsage columnID="FA39DE33-7EB4-03D6-0FEC-3160DC335342"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="74E03565-FE75-4622-EB37-27D59975A61F" name="CLIENTE_NEGOCIO_FK">
+<ind_PK_UK id="74E03565-FE75-4622-EB37-27D59975A61F" name="CLIENTES_NEGOCIO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>A4CCF471-2A45-3CCE-D600-A47454DAF8C0</generatorID>

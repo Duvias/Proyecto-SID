@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E031F4B3-3A6A-9C59-B223-753F1A80E47A" name="SESION_CAJA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E031F4B3-3A6A-9C59-B223-753F1A80E47A" name="SESIONES_CAJA">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>4C25D87A-E570-20A3-F5AB-558ECF8FAE70</generatorID>
@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CAJA_id_Caja" id="63EDDA78-8A24-70DF-11CA-3E8E4834EC66">
+<Column name="CAJAS_id_Caja" id="63EDDA78-8A24-70DF-11CA-3E8E4834EC66">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>B492FE98-30F1-5FE1-EF95-6408EA20746F</generatorID>
@@ -42,8 +42,10 @@
 <ownerDesignName>MER_Stocka</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="monto_final" id="633E9171-3F07-6513-2CEA-90DFA7157AB6">
@@ -51,10 +53,13 @@
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>840F19BD-0F79-4A73-872F-B05E4053B884</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="estado" id="8E4EF729-3338-9F76-C0ED-6AC03DD37988">
@@ -86,7 +91,20 @@
 <generatorID>3E633E6D-B80A-786E-5C29-50D76B0DBC95</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_cierre" id="A04D5147-3AD4-02CB-75DF-10CF6CB45B48">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:33:02 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -103,7 +121,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E752C0D2-8594-BA2D-6AFC-55FC1122103B" name="SESION_CAJA_PK">
+<ind_PK_UK id="E752C0D2-8594-BA2D-6AFC-55FC1122103B" name="SESIONES_CAJA_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>63A7A92F-CAEB-E65C-425E-311C2C5479DD</generatorID>
@@ -115,7 +133,7 @@
 <colUsage columnID="2C5939B4-EA5A-EC3A-8EC6-F71AC78F9A98"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CA72DE20-C65E-606F-00CC-9E110749E3C7" name="SESION_CAJA_CAJA_FK">
+<ind_PK_UK id="CA72DE20-C65E-606F-00CC-9E110749E3C7" name="SESIONES_CAJA_CAJA_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>72B6C5EA-11DD-D47E-7C4A-9620EA980D06</generatorID>

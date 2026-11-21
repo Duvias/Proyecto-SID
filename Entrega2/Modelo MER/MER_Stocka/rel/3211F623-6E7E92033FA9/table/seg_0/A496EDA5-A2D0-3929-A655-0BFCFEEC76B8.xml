@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A496EDA5-A2D0-3929-A655-0BFCFEEC76B8" name="VENTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A496EDA5-A2D0-3929-A655-0BFCFEEC76B8" name="VENTAS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>58D1BB67-29EF-F1A5-ABAF-5DAC55989718</generatorID>
@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="EMPLEADO_id" id="8474959F-759E-C661-95C8-E3E7DE76E70E">
+<Column name="EMPLEADOS_id" id="8474959F-759E-C661-95C8-E3E7DE76E70E">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>C8D89441-73A0-B3A4-F69E-54E203DE4A2E</generatorID>
@@ -40,8 +40,11 @@
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>396C1273-9146-31B9-85F2-9705BBDA9DEB</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="subtotal" id="7B73F8B2-8B87-4346-8464-4AFAACDFBB4F">
@@ -52,7 +55,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="impuesto" id="16B84A9F-7A78-3180-B4B4-FC08A4B8FEA4">
@@ -63,7 +68,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="descuento" id="D2B22F90-C7F4-3C21-FC0D-3DEFA5A48E7B">
@@ -74,7 +81,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="total" id="C679857E-EDE8-9EF2-4F01-D9CA3524D934">
@@ -85,7 +94,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="metodo_pago" id="CC239030-CC0A-5E88-06CA-8C28C946192D">
@@ -96,7 +107,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="estado" id="A32D8164-CF24-ACA6-9CFA-588AC0E66F0C">
@@ -107,7 +119,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fecha_creacion" id="D7B3E03C-EAFF-C233-3595-53783CEB5B41">
@@ -128,11 +141,11 @@
 <ownerDesignName>MER_Stocka</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SESION_CAJA_id" id="9E1EE1B4-DB76-304D-547B-BCFAB2F1C224">
+<Column name="SESIONES_CAJA_id" id="9E1EE1B4-DB76-304D-547B-BCFAB2F1C224">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>F7A6688A-BFCE-B6F8-66F0-5B857841EBBC</generatorID>
@@ -147,9 +160,24 @@
 <colAssociation fkAssociation="875F520F-0912-0A2C-22F8-FBDA8AF158AC" referredColumn="2C5939B4-EA5A-EC3A-8EC6-F71AC78F9A98"/>
 </associations>
 </Column>
+<Column name="CLIENTES_id_cliente" id="50FE4F17-7B6B-D0EA-BEE0-46374198370B">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:00:59 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46DFE7C3-29F8-FD84-EE4B-D898096D9ECA" referredColumn="FA39DE33-7EB4-03D6-0FEC-3160DC335342"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5796A54F-CA7F-177E-92FD-FF153EEED969" name="VENTA_PK">
+<ind_PK_UK id="5796A54F-CA7F-177E-92FD-FF153EEED969" name="VENTAS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>74259F2E-EB71-009C-B709-83F72537B695</generatorID>
@@ -161,7 +189,18 @@
 <colUsage columnID="17F9396B-7BE5-2015-87C5-F38BD223A3C0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7EAEFC0B-28E5-7085-4BF2-E561D555B80E" name="VENTA_EMPLEADO_FK">
+<ind_PK_UK id="097FA28B-7392-A9B1-9DF5-8A085D74BA06" name="VENTAS_NUMERO_TICKET_UK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 01:55:37 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E1EE1B4-DB76-304D-547B-BCFAB2F1C224"/>
+<colUsage columnID="43847B74-34E1-1A09-F582-5DE399DDFF2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EAEFC0B-28E5-7085-4BF2-E561D555B80E" name="VENTAS_EMPLEADO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>2F8F4D30-1256-3F34-6FD2-DEEF5A79B2FD</generatorID>
@@ -172,7 +211,7 @@
 <colUsage columnID="8474959F-759E-C661-95C8-E3E7DE76E70E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B91963F4-B9EF-5B3E-A5A5-321C771D22A2" name="VENTA_SESION_CAJA_FK">
+<ind_PK_UK id="B91963F4-B9EF-5B3E-A5A5-321C771D22A2" name="VENTAS_SESION_CAJA_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>B4675B65-7D21-CB63-CCBC-17DD94A0B6BC</generatorID>
@@ -183,5 +222,30 @@
 <colUsage columnID="9E1EE1B4-DB76-304D-547B-BCFAB2F1C224"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="E6D5A8B7-BC21-1CDC-248D-8770C80B6ED6" name="VENTAS_CLIENTES_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:00:59 UTC</createdTime>
+<generatorID>F2176119-0496-72BC-0561-88A93574E0FA</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50FE4F17-7B6B-D0EA-BEE0-46374198370B"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="VENTAS_METODO_PAGO_CK" directorySegmentName="seg_0" id="FE2B7C6F-E4FA-6E03-9811-6669A0E4DE0A">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 01:52:36 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<rule><![CDATA[metodo_pago IN ('EFECTIVO','TARJETA_DEBITO','TARJETA_CREDITO','TRANSFERENCIA')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="VENTAS_ESTADO_CK" directorySegmentName="seg_0" id="0E81241D-E75D-9782-1527-1213248610F6">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 01:52:36 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<rule><![CDATA[estado IN ('COMPLETADA','ANULADA','PENDIENTE')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

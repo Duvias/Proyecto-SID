@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="395CE0BB-65EC-1A25-8425-76EBD321C28E" name="EMPLEADO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="395CE0BB-65EC-1A25-8425-76EBD321C28E" name="EMPLEADOS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>3E462A62-F163-4C90-E17C-25F60EA54401</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>empleado</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="USUARIO_id_usuario" id="04DABBD4-D364-1617-42CC-3E0F14680BC0">
+<Column name="USUARIOS_id_usuario" id="04DABBD4-D364-1617-42CC-3E0F14680BC0">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>AD3BFF3D-16F6-FFAC-E0BD-477377207E95</generatorID>
@@ -68,7 +69,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ESTABLECIMIENTO_id_establecimiento" id="1D3D594D-EE15-2D7F-A41F-F10344420A05">
+<Column name="ESTABLECIMIENTOS_id_establecimiento" id="1D3D594D-EE15-2D7F-A41F-F10344420A05">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>7A30E74F-B02C-CC6C-DE6A-DE5B089794E1</generatorID>
@@ -85,7 +86,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="ABF6B56B-0E87-F8C3-07AF-D9D621B69297" name="EMPLEADO_PK">
+<ind_PK_UK id="ABF6B56B-0E87-F8C3-07AF-D9D621B69297" name="EMPLEADOS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>74457737-5662-4DEA-E3B0-A0E236EF7FDB</generatorID>
@@ -97,7 +98,7 @@
 <colUsage columnID="8A710739-73A3-7DA9-BF0F-F2673881EB2E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="33A2DBD7-95B3-82F2-B9EE-3F9B59A7B565" name="EMPLEADO__IDX">
+<ind_PK_UK id="33A2DBD7-95B3-82F2-B9EE-3F9B59A7B565" name="EMPLEADOS__IDX">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <ownerDesignName>MER_Stocka</ownerDesignName>
@@ -108,7 +109,7 @@
 <colUsage columnID="04DABBD4-D364-1617-42CC-3E0F14680BC0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F482C28E-37B0-8C40-F626-5A21E30C4BDC" name="EMPLEADO_ESTABLECIMIENTO_FK">
+<ind_PK_UK id="F482C28E-37B0-8C40-F626-5A21E30C4BDC" name="EMPLEADOS_ESTABLECIMIENTO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>9AD268B6-0A8F-A144-7D32-176126D68279</generatorID>
@@ -119,7 +120,7 @@
 <colUsage columnID="1D3D594D-EE15-2D7F-A41F-F10344420A05"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D432C602-2A48-48F7-14CE-E3CF30AABE78" name="EMPLEADO_USUARIO_FK">
+<ind_PK_UK id="D432C602-2A48-48F7-14CE-E3CF30AABE78" name="EMPLEADOS_USUARIO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>84EE3B57-A8F5-A6E2-7AB4-51AE55633C40</generatorID>

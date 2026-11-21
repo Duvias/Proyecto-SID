@@ -1,9 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB59BC9B-A243-AF54-392C-31ECC481DBD6" name="PRODUCTO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB59BC9B-A243-AF54-392C-31ECC481DBD6" name="PRODUCTOS">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>84834AA6-7627-B68F-2A7E-C3351967065B</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>producto</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -24,10 +25,12 @@
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>2ACB7AC2-3F3D-9F3D-7C81-5B0772B64A9B</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="nombre" id="54B336B5-3326-A3F5-86E7-439304CE2800">
@@ -89,7 +92,7 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CATEGORIA_id_categoria" id="AA4F1679-8064-82E8-CE65-ABCB735D3D93">
+<Column name="CATEGORIAS_id_categoria" id="AA4F1679-8064-82E8-CE65-ABCB735D3D93">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>C8543883-54BF-1E41-98EF-1C99FCED0DAF</generatorID>
@@ -104,9 +107,23 @@
 <colAssociation fkAssociation="A519A6AB-001B-10CF-BF70-52ABF6D4760F" referredColumn="C21D9931-A91D-EABC-84B7-208200E9BC18"/>
 </associations>
 </Column>
+<Column name="NEGOCIOS_id_negocio" id="B9916B12-14B2-C670-69CC-5CDBBA28B6D6">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:17:51 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="661DBF59-1438-C1E6-BCD8-9A0E0669D15F" referredColumn="9E2D438F-5735-3F9D-09B1-A245C552692C"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F389AC14-B2E7-F644-41F6-DB5387D39DED" name="PRODUCTO_PK">
+<ind_PK_UK id="F389AC14-B2E7-F644-41F6-DB5387D39DED" name="PRODUCTOS_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>F16C47A1-EFC1-58C8-0D20-1A40978445D4</generatorID>
@@ -118,7 +135,18 @@
 <colUsage columnID="3AA27BDB-300D-8077-F49C-3A37BD4DB50F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D9DBC7E1-B0F6-F3A2-1C52-38BD78F92D01" name="PRODUCTO_CATEGORIA_FK">
+<ind_PK_UK id="81301F5E-F0E2-F7F3-110F-43CC12F78420" name="PRODUCTOS_CODIGO_BARRAS_UK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:19:24 UTC</createdTime>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9916B12-14B2-C670-69CC-5CDBBA28B6D6"/>
+<colUsage columnID="2DDAC07A-CBF1-88DB-F04C-8565175C1A19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9DBC7E1-B0F6-F3A2-1C52-38BD78F92D01" name="PRODUCTOS_CATEGORIA_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>03F189E3-819C-A54D-9F69-ABE63B0E233C</generatorID>
@@ -127,6 +155,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AA4F1679-8064-82E8-CE65-ABCB735D3D93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E558A26C-93B0-A203-1958-0991F125BD52" name="PRODUCTOS_NEGOCIOS_FK">
+<createdBy>Mariana</createdBy>
+<createdTime>2026-11-21 02:17:51 UTC</createdTime>
+<generatorID>BD33899D-71D0-6BE2-6754-E5B5CA979573</generatorID>
+<ownerDesignName>MER_Stocka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9916B12-14B2-C670-69CC-5CDBBA28B6D6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

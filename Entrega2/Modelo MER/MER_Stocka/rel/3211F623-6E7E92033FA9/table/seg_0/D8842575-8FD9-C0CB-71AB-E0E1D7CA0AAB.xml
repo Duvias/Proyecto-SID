@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8842575-8FD9-C0CB-71AB-E0E1D7CA0AAB" name="DETALLE_VENTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8842575-8FD9-C0CB-71AB-E0E1D7CA0AAB" name="DETALLES_VENTA">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>CAE3EABE-2290-86D7-4778-D10B2953A0DB</generatorID>
 <ownerDesignName>MER_Stocka</ownerDesignName>
+<ordsAlias>detalle_venta</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="VENTA_id_venta" id="BB6CCE5D-AC60-3367-7EBD-74B6C943BEF9">
+<Column name="VENTAS_id_venta" id="BB6CCE5D-AC60-3367-7EBD-74B6C943BEF9">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>0D640EF3-A9D9-1F1A-977A-3BB4DEA36E9D</generatorID>
@@ -78,19 +79,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_detalle_venta1" id="219CAE78-EE7E-5A66-EA38-34A124188C21">
-<createdBy>Mariana</createdBy>
-<createdTime>2026-10-02 12:40:21 UTC</createdTime>
-<generatorID>6B70212D-64C7-2BF7-83BE-1CF5F559CFE5</generatorID>
-<ownerDesignName>MER_Stocka</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="PRODUCTO_id" id="83206F32-6C39-5AD2-253D-D603EB731681">
+<Column name="PRODUCTOS_id" id="83206F32-6C39-5AD2-253D-D603EB731681">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 13:24:05 UTC</createdTime>
 <ownerDesignName>MER_Stocka</ownerDesignName>
@@ -106,7 +95,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F4143F80-6812-9619-D637-B661816B4A03" name="DETALLE_VENTA_PK">
+<ind_PK_UK id="F4143F80-6812-9619-D637-B661816B4A03" name="DETALLES_VENTA_PK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>97AAC503-6537-8DC0-E695-7C9F0A9B522B</generatorID>
@@ -118,7 +107,7 @@
 <colUsage columnID="002F5E56-2A1A-67E2-6508-F94388ADC5D1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="604EFB27-A999-7D86-7F8B-6CEA93A5DD9A" name="DETALLE_VENTA_VENTA_FK">
+<ind_PK_UK id="604EFB27-A999-7D86-7F8B-6CEA93A5DD9A" name="DETALLES_VENTA_VENTA_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>E410523A-5F33-5E5D-F0E9-4B173079BF52</generatorID>
@@ -129,7 +118,7 @@
 <colUsage columnID="BB6CCE5D-AC60-3367-7EBD-74B6C943BEF9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C45FEE63-54BC-56B9-6859-234C71BE982A" name="DETALLE_VENTA_PRODUCTO_FK">
+<ind_PK_UK id="C45FEE63-54BC-56B9-6859-234C71BE982A" name="DETALLES_VENTA_PRODUCTO_FK">
 <createdBy>Mariana</createdBy>
 <createdTime>2026-10-02 12:40:21 UTC</createdTime>
 <generatorID>B4FD08F1-1E9C-C5B6-DF99-8F6477EF1F10</generatorID>
